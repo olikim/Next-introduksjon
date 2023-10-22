@@ -7,8 +7,7 @@ export type SurveyQuestion = {
 }
 
 export type SurveyAnswer  = {
-    surveyAnswer: string | number,
-    isMultipleChoice: boolean 
+    surveyAnswer: string 
 }
 
 export type SurveyParticipant = {
@@ -18,9 +17,8 @@ export type SurveyParticipant = {
 }
 
 export type SurveyResponse = {
-    participant: SurveyParticipant,
     questionId: string,
-    answer: SurveyAnswer
+    answer: string
 }
 
 export type SurveyResponses = Record<string, SurveyAnswer>
